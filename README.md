@@ -23,20 +23,38 @@ The Dataset used in this project was sourced from Maven Analytics. It includes d
 - Begin Date - Year of Birth.
 - End Date - Year of Death
 
-  - ## 2. Artwork Table
+- ## 2. Artwork Table
     Includes data about each artwork in the collection :
-  - Object ID - Unique identifier for each artwork.
-  - Title - Title of the artwork.
-  - Constituent ID - Artist's ID.
-  - Date - Artwork creation Date.
-  - Medium - Materials used for the artwork.
-  - Dimensions - Size of the artwork.
-  - Classification - Size of the artwork.
-  - Department - MOMA department responsible for the artwork.
-  - Date Acquired - Artwork Acquisition Date.
-  - On View - Where the artwork is currently on display at the Museum.
-  - URL - Link to the artwork on MOMA's website.
-  - Image URL - Direct link to image of the artwork.
+- Object ID - Unique identifier for each artwork.
+- Title - Title of the artwork.
+- Constituent ID - Artist's ID.
+- Date - Artwork creation Date.
+- Medium - Materials used for the artwork.
+- Dimensions - Size of the artwork.
+- Classification - Size of the artwork.
+- Department - MOMA department responsible for the artwork.
+- Date Acquired - Artwork Acquisition Date.
+- On View - Where the artwork is currently on display at the Museum.
+- URL - Link to the artwork on MOMA's website.
+- Image URL - Direct link to image of the artwork.
   The Csv file can be downloaded here.
 
 # Tools and Technologies used 
+1. Power BI : This was the major tool used for this project. Power BI was used to create interactive dashboards and visualization for the insights generated from this project.
+2. Power Query Editor : The power query editor was used for data cleaning and transformation across different columns.
+
+# Project Workflow
+A project workflow provides structure for every data analytics projects . It keeps the project organized and aligned with goals .The workflow of this project are :
+1. Project Objective
+2. Data Collection
+3. Data Cleaning and Preparation
+4. Data Visualization
+5. Interpretation & Reporting
+
+# Project Objective
+The objectives of this project was to analyze the Musuem of Modern Art On View (MOMA) collection to undercover patterns and insights that highlight the diversity, acquisition trends, and the visibility of artworks and artists. 
+
+# Data Collection 
+The data for this project was collected from Maven Analytics . The data included the Artworks and Artist records from the Museum in New York City.
+
+# Data Cleaning and Preparation
