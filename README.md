@@ -58,3 +58,202 @@ The objectives of this project was to analyze the Musuem of Modern Art On View (
 The data for this project was collected from Maven Analytics . The data included the Artworks and Artist records from the Museum in New York City.
 
 # Data Cleaning and Preparation
+The data cleaning process began in Power Query Editor in Power BI. The major operation includes
+
+- ## Artist Table
+- Changed Data Types for each columns: Constituent ID was changed to Number, Artist Name,ArtistBio, Nationality, Gender was changed to Text .
+- Replaced Null Values in Nationality and Gender to Unknown
+- Renamed DisplayName column to Artist Name for Clarity.
+- Text Operation such as changing the alphabet case from lower case to Proper Case.
+- Removed Unnecessary Columns. The M Query Codes from the Power Query Editor have been attached to this repository.
+
+- ## Artwork Table
+- Changed Data Types for column with incorrect data types.
+- Created a new column for Year Extracted . Used a formula to extract the first 4 digits number from the Date column.
+- Replaced Inconsistencies values in Year Extracted Column for accuracy. The M Query Codes from the Power Query Codes have been attached to this repository.
+
+In Addition, i created new measures and new column to provide deeper insights into MOMA ON VIEW Analysis:
+- Total Artworks : To calculate artworks on view in the museum.
+- Total Artist : To calculate Artist with Artwork in the museum.
+- Total Medium
+- Most Featured Artsit : Artist with the Most Artwork
+- Male Artist
+- Female Artist
+- Total Department
+- Total Classification
+
+Additional Transformation includes 
+- Created new column to calculate each Artist First Artwork and Age at First Artwork.
+- New column to group the Age at First Artwork.
+- New column to calculate Artist Artwork Count
+- Created New Column to calulate Acquisition Time Period.  A calendar Table was created to support Artwork Date Acquired.
+
+# Data Model 
+The Data Model was automatically created in Power BI. This shows the relationship between the various Table in this project.
+
+# Data Analysis & Visualization
+After the completion of data cleaning and preparation, i proceeded to begin my analysis and visualization. To ensure easy readability and understanding, i divided the visualization into 5 pages.
+Some Key insights from the data visualization are summarized below:
+
+# Overview
+The MOMA Dashboard provides a comprehensive snapshot of the museum's artwork collection, revealing important patterns in artist representation, medium distribution, acquisition trends, and gender diversity among artists.
+The Museum of Modern Art holds a total of 1,345 artworks created by 661 distinct artists. These works span across 481 unique mediums, illustrating the museum’s commitment to a wide variety of artistic forms and practices. The most featured artist in the collection is Robert Frank, with 55 artworks, making him the most represented individual.
+The top five artists, Robert Frank leads with a significant number of pieces, followed by Henri Matisse, Pablo Picasso, Jacob Lawrence, and an unidentified photographer.
+In terms of classification, the collection is heavily dominated by paintings, drawings, and photographs. Paintings alone account for 321 items, followed closely by drawings (260) and photographs (240). Other major classifications include design objects, sculptures, prints, and architectural works.
+The acquisition trends show a sharp increase in the number of artworks acquired in recent years. Between 2011 and 2024, the museum acquired 497 pieces more than any other time period—highlighting an active acquisition strategy in the past decade. This contrasts with lower acquisition numbers in earlier decades, particularly before 1950.
+Gender representation among artists reveals male artist have the highest artworks. Out of 661 artists, 421 artworks are attributed to male artists, while only 191 are by female artists. Additionally, 40 artworks come from artists whose gender is unknown, and just one artwork is attributed to a transgender woman. 
+
+# Artist
+The Artists section of the MoMA Dashboard provides valuable insights into the gender distribution, nationality, and activity status of artists represented in the museum's collection. 
+Artist nationalities reveals a strong American dominance. Out of the top five nationalities, American artists account shows a substantial 292 entries, The second most common nationality, French, which stands at 51. German, British, Italian, and Japanese artists all appear equally in the dataset, each with 22–30 artists represented. Additionally, 22 artists have an unknown nationality, indicating either limited biographical data or anonymous contributions.
+
+The age/status distribution of the artists offers further context about their periods of activity. Most artists fall into the 20–35 and 36–55 age brackets, with 285 and 276 artists respectively. These two age ranges dominate the data, suggesting that the museum's acquisitions are largely focused on emerging and mid-career artists. A smaller number of artists are categorized in the 56–75 range (42 artists), while only 6 artists are recorded as 76 and upward. A considerable portion—about 35 artists—have an "unknown" status, and  there were some uncertainities in ages that falls between (1–12 years) and a smaller group falls between 13–19 years.
+
+The bottom of the dashboard includes a searchable artist table, listing names along with their nationality, gender, and total number of artworks in the collection. For example, American male artist Aaron Siskind has 10 artworks, while several other artists such as Agnes Martin and Abdel Kader El-Janabi—are represented by only one.
+
+# Artwork
+The Artworks section of the MoMA Dashboard gives a detailed overview of how artworks in the collection are distributed across mediums, departments, and classifications. The data reveals that the collection encompasses 481 unique mediums, spread across 6 departments and categorized into 20 classifications. This diversity reflects MoMA’s wide-ranging curatorial scope and its embrace of both traditional and contemporary art forms.
+
+Among the departments, Painting & Sculpture leads with 455 artworks, followed by Drawings & Prints with 404. These two departments alone account for the majority of the museum's holdings. Architecture & Design (235 artworks) and Photography (226) also represent significant portions of the collection. In contrast, Media and Performance (21 artworks) and Film (4 artworks) are minimally represented, suggesting more niche or emerging curatorial focus areas.
+
+When examining medium usage, the top five most commonly used mediums show a strong preference for traditional techniques. Oil on canvas tops the list with 185 artworks, followed by gelatin silver print (158), and various forms of drawing media such as ink, colored ink, and crayon on paper (132). Bronze (31) and casein tempera on hardboard (30) round out the top five, showing a blend of sculptural and mixed media approaches.
+
+The classification breakdown aligns closely with these observations. Painting is the most dominant classification, with 321 artworks, followed by drawing (260) and photograph (240). Other significant classifications include design (143), sculpture (125), and print (88). More specialized or less represented classifications such as architecture (67), video (16), installation (15), and illustrated books (9) show MoMA’s expanding interest in multimedia and non-traditional formats.
+
+Overall, this section emphasizes MoMA's traditional strengths in painting, drawing, and photography, while also highlighting its efforts to diversify into other media and departments. The dominance of established mediums like oil on canvas and gelatin silver print indicates a strong foundation in classic techniques, even as newer forms such as performance and video remain areas for potential growth.
+
+# Time Analysis
+The Time Analysis section of the MoMA Dashboard provides a temporal breakdown of artwork acquisitions, offering insight into when works have entered the museum's collection. The data is categorized by weekday, month, and year range, helping identify key periods of curatorial activity.
+
+Acquisition by Weekday
+Artwork acquisition shows a clear preference for certain days of the week. Tuesday stands out as the most active day, with 455 artworks acquired, significantly more than any other day. It is followed by Wednesday with 270 artworks, and Thursday with 269. Monday also sees a notable number of acquisitions at 254. Conversely, Sunday (44), Friday (40), and especially Saturday (6) show much lower activity, suggesting that acquisitions are primarily processed on weekdays.
+
+Acquisition by Month
+When analyzing acquisition by month, October leads substantially with 394 artworks acquired, followed by May with 176. Other months with relatively high acquisition activity include December (131), November (113), and June (110). The remaining months—particularly January (94), September (84) , and February (78) reflect moderate activity. April (75),March (76), July (5),and August (2) represent the lowest acquisition periods, with August and July showing a near halt in acquisitions.
+
+Acquisition by Year Range
+To provide better historical context, acquisition years are grouped into six ranges. The 2011–2024 period accounts for the highest number of acquisitions, totaling 497 artworks, which reflects MoMA’s recent expansion and curatorial activity. The 1991–2010 period follows with 270 artworks, while 1951–1970 and before 1950 account for 217 and 184 respectively. The 1971–1990 range has 170 artworks. Only 7 artworks are tagged with unknown acquisition years, suggesting strong data integrity in this dimension.
+
+# Map
+The Map section of the MoMA Dashboard visually represents the geographical distribution of artist nationalities featured in the museum's collection. This interactive component allows users to understand the global reach of the MoMA collection by locating the countries associated with each artist’s nationality on a world map.
+
+The data includes a diverse range of nationalities, spanning North and South America, Europe, Africa, Asia, and Oceania. Notable among these are large representations from American, British, French, German, and Italian artists—countries traditionally associated with strong modern and contemporary art movements. Other well-represented nationalities include Japanese, Dutch, Canadian, and Spanish.
+
+The map also showcases artists from less commonly represented regions, underscoring MoMA’s growing inclusivity. These include nationalities such as Bangladeshi, Ethiopian, Mozambican, Native American, Oneida, Kuwaiti, Senegalese, and Trinidad and Tobagonian, among others. This illustrates a commitment to cultural diversity and a broadening of curatorial horizons beyond Western art centers.
+
+Additionally, some entries are categorized under “Unknown”, which likely indicates either missing nationality data or artists whose origins could not be definitively identified.
+
+# Conclusion
+The MoMA Dashboard provides a powerful analytical lens into the Museum of Modern Art’s collection, revealing critical patterns in artist demographics, artwork mediums, acquisition timelines, and global representation. Through interactive visualizations and curated data views, the dashboard surfaces both strengths and disparities in the collection’s makeup—empowering stakeholders to make informed, data-driven decisions.
+
+The insights uncovered highlight areas of excellence, such as MoMA’s strong holdings in painting, photography, and mid-to-late 20th-century works. At the same time, they draw attention to gaps in gender representation, underrepresented regions, and limited diversity in medium and classification. The clear trends in acquisition timing also offer opportunities to streamline institutional workflows and improve planning.
+
+By translating data into actionable strategies, this dashboard supports MoMA’s mission to remain a leader in modern and contemporary art. With sustained focus on equity, inclusion, and global engagement, the museum can continue to evolve its collection to reflect a richer, more diverse art historical narrative.
+
+This documentation, alongside the dashboard itself, serves as a foundational tool for ongoing evaluation and strategic development—ensuring MoMA’s collection continues to inspire, educate, and represent the full spectrum of creative expression.
+
+# Recommendation
+. Advance Gender Equity in the Collection
+Current Status:
+
+Male artists: 429
+
+Female artists: 191
+
+Artworks by men: 911
+
+Artworks by women: 241
+
+Other/Unknown gender: 93
+
+Recommendation:
+Launch targeted acquisition efforts and curatorial projects to raise the proportion of artworks by women and gender-diverse artists by at least 25% over the next 5 years.
+
+2. Broaden Global Representation
+Current Status:
+
+Top nationality: American (292 artists)
+
+Other heavily represented: French (51), German (30), British (28)
+
+Underrepresented/represented once: Bangladeshi, Mozambican, Oneida, etc.
+
+Recommendation:
+Allocate dedicated resources to acquire works from Africa, South America, Southeast Asia, and the Middle East, with the goal of increasing non-Western nationalities by at least 30%.
+
+3. Diversify Mediums and Art Forms
+Current Status:
+
+Top mediums:
+
+Oil on canvas (185)
+
+Gelatin silver print (158)
+
+Ink/Crayon/Colored Ink on Paper (132)
+
+Low presence in:
+
+Video (16)
+
+Installation (15)
+
+Illustrated books (9)
+
+Film (4)
+
+Recommendation:
+Boost representation in underrepresented mediums by doubling acquisitions in video, installation, and digital art over the next cycle. Support programs for emerging media.
+
+4. Balance Artist Representation
+Current Status:
+
+661 artists, but heavily skewed towards a few (e.g., Robert Frank has 55 works)
+
+Recommendation:
+Cap the maximum works per artist in new acquisitions, while increasing investment in first-time and emerging artists to improve distribution equity.
+
+5. Optimize Acquisition Scheduling
+Current Status:
+
+Busiest day: Tuesday (455 artworks)
+
+Quietest day: Saturday (6 artworks)
+
+Top month: October (394 artworks)
+
+Lowest month: August (2 artworks)
+
+Recommendation:
+Review internal acquisition workflows. Evenly distribute acquisition activity to prevent resource clustering and align with annual funding cycles.
+
+6. Strengthen Historical Coverage and Metadata Completeness
+Current Status:
+
+Top period: 2011–2024 (497 artworks)
+
+Lowest (known) period: 1971–1990 (170 artworks)
+
+Unknown years: 7 artworks
+
+Unknown nationalities: 22 artists
+
+Recommendation:
+Develop a curatorial initiative to fill historical and biographical gaps, focusing on underrepresented time periods and improving metadata quality across the board.
+
+7. Use Data to Drive Strategy
+Current Insight:
+Clear patterns in demographics, timing, and collection bias are visible via the dashboard.
+
+Recommendation:
+Integrate dashboard analytics into quarterly acquisition reviews, funding decisions, and DEI (Diversity, Equity, and Inclusion) benchmarks to ensure data-informed curation.
+
+8. Foster Global and Regional Partnerships
+Current Observation:
+Artist nationalities are concentrated in Western countries.
+
+Recommendation:
+Establish acquisition collaborations with regional institutions, art fairs, and cultural ministries in underserved areas to expand outreach and diversify representation.
+
+
+
