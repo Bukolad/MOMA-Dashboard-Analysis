@@ -100,16 +100,16 @@ The MOMA Dashboard provides a comprehensive snapshot of the museum's artwork col
 The Museum of Modern Art holds a total of 1,345 artworks created by 661 distinct artists. These works span across 481 unique mediums, illustrating the museum’s commitment to a wide variety of artistic forms and practices. The most featured artist in the collection is Robert Frank, with 55 artworks, making him the most represented individual.
 The top five artists, Robert Frank leads with a significant number of pieces, followed by Henri Matisse, Pablo Picasso, Jacob Lawrence, and an unidentified photographer.
 In terms of classification, the collection is heavily dominated by paintings, drawings, and photographs. Paintings alone account for 321 items, followed closely by drawings (260) and photographs (240). Other major classifications include design objects, sculptures, prints, and architectural works.
-The acquisition trends show a sharp increase in the number of artworks acquired in recent years. Between 2011 and 2024, the museum acquired 497 pieces more than any other time period—highlighting an active acquisition strategy in the past decade. This contrasts with lower acquisition numbers in earlier decades, particularly before 1950.
+The acquisition trends show a sharp increase in the number of artworks acquired in recent years. Between 2011 and 2024, the museum acquired 497 pieces more than any other time period highlighting an active acquisition strategy in the past decade. This contrasts with lower acquisition numbers in earlier decades, particularly before 1950.
 Gender representation among artists reveals male artist have the highest artworks. Out of 661 artists, 421 artworks are attributed to male artists, while only 191 are by female artists. Additionally, 40 artworks come from artists whose gender is unknown, and just one artwork is attributed to a transgender woman. 
 
 # Artist
 The Artists section of the MoMA Dashboard provides valuable insights into the gender distribution, nationality, and activity status of artists represented in the museum's collection. 
 Artist nationalities reveals a strong American dominance. Out of the top five nationalities, American artists account shows a substantial 292 entries, The second most common nationality, French, which stands at 51. German, British, Italian, and Japanese artists all appear equally in the dataset, each with 22–30 artists represented. Additionally, 22 artists have an unknown nationality, indicating either limited biographical data or anonymous contributions.
 
-The age/status distribution of the artists offers further context about their periods of activity. Most artists fall into the 20–35 and 36–55 age brackets, with 285 and 276 artists respectively. These two age ranges dominate the data, suggesting that the museum's acquisitions are largely focused on emerging and mid-career artists. A smaller number of artists are categorized in the 56–75 range (42 artists), while only 6 artists are recorded as 76 and upward. A considerable portion—about 35 artists—have an "unknown" status, and  there were some uncertainities in ages that falls between (1–12 years) and a smaller group falls between 13–19 years.
+The age/status distribution of the artists offers further context about their periods of activity. Most artists fall into the 20–35 and 36–55 age brackets, with 285 and 276 artists respectively. These two age ranges dominate the data, suggesting that the museum's acquisitions are largely focused on emerging and mid-career artists. A smaller number of artists are categorized in the 56–75 range (42 artists), while only 6 artists are recorded as 76 and upward. A considerable portion about 35 artists—have an "unknown" status, and  there were some uncertainities in ages that falls between (1–12 years) and a smaller group falls between 13–19 years.
 
-The bottom of the dashboard includes a searchable artist table, listing names along with their nationality, gender, and total number of artworks in the collection. For example, American male artist Aaron Siskind has 10 artworks, while several other artists such as Agnes Martin and Abdel Kader El-Janabi—are represented by only one.
+The bottom of the dashboard includes a searchable artist table, listing names along with their nationality, gender, and total number of artworks in the collection. For example, American male artist Aaron Siskind has 10 artworks, while several other artists such as Agnes Martin and Abdel Kader El-Janabi are represented by only one.
 
 # Artwork
 The Artworks section of the MoMA Dashboard gives a detailed overview of how artworks in the collection are distributed across mediums, departments, and classifications. The data reveals that the collection encompasses 481 unique mediums, spread across 6 departments and categorized into 20 classifications. This diversity reflects MoMA’s wide-ranging curatorial scope and its embrace of both traditional and contemporary art forms.
@@ -144,7 +144,7 @@ The map also showcases artists from less commonly represented regions, underscor
 Additionally, some entries are categorized under “Unknown”, which likely indicates either missing nationality data or artists whose origins could not be definitively identified.
 
 # Conclusion
-The MoMA Dashboard provides a powerful analytical lens into the Museum of Modern Art’s collection, revealing critical patterns in artist demographics, artwork mediums, acquisition timelines, and global representation. Through interactive visualizations and curated data views, the dashboard surfaces both strengths and disparities in the collection’s makeup—empowering stakeholders to make informed, data-driven decisions.
+The MoMA Dashboard provides a powerful analytical lens into the Museum of Modern Art’s collection, revealing critical patterns in artist demographics, artwork mediums, acquisition timelines, and global representation. Through interactive visualizations and curated data views, the dashboard surfaces both strengths and disparities in the collection’s makeup empowering stakeholders to make informed, data-driven decisions.
 
 The insights uncovered highlight areas of excellence, such as MoMA’s strong holdings in painting, photography, and mid-to-late 20th-century works. At the same time, they draw attention to gaps in gender representation, underrepresented regions, and limited diversity in medium and classification. The clear trends in acquisition timing also offer opportunities to streamline institutional workflows and improve planning.
 
@@ -153,107 +153,29 @@ By translating data into actionable strategies, this dashboard supports MoMA’s
 This documentation, alongside the dashboard itself, serves as a foundational tool for ongoing evaluation and strategic development—ensuring MoMA’s collection continues to inspire, educate, and represent the full spectrum of creative expression.
 
 # Recommendation
-. Advance Gender Equity in the Collection
-Current Status:
+## 1. Support More Women and Gender-Diverse Artists
+Increase the number of artworks by women and gender-diverse artists through targeted acquisitions and curated projects. Actively identify and include artists who have historically been overlooked due to gender bias. Collaborate with experts and researchers to guide these efforts. The goal is to raise representation by at least 25% over the next five years.
 
-Male artists: 429
+## 2. Include More Art from Around the World
+Expand the collection by acquiring artworks from underrepresented regions, including Africa, South America, Southeast Asia, and the Middle East. Allocate dedicated funding and resources to ensure a focused and sustained effort. Build relationships with artists, institutions, and curators from these areas. Aim to increase the share of non-Western nationalities in the collection by at least 30%.
 
-Female artists: 191
+## 3. Add Different Types of Art
+Address the low representation of certain mediums such as video, installation, illustrated books, and digital art. Double the number of acquisitions in these categories in the upcoming acquisition cycle. Invest in curatorial support and infrastructure to properly care for and present emerging media. This approach helps ensure the collection reflects the diversity of contemporary art practices.
 
-Artworks by men: 911
+## 4. Make Artist Representation More Fair
+Prevent overrepresentation by capping the number of new acquisitions per individual artist. Prioritize investment in first-time acquisitions and works by emerging artists. Improve the overall distribution of artists in the collection to promote a more balanced and inclusive portfolio. This helps diversify artistic voices and ensures wider representation.
 
-Artworks by women: 241
+## 5. Plan Acquisitions Throughout the Year
+Review and adjust internal acquisition workflows to avoid seasonal or end-of-year clustering. Distribute acquisition activities evenly throughout the calendar year. Align scheduling with funding cycles to improve planning and resource use. This ensures smoother operations and more consistent curatorial decision-making.
 
-Other/Unknown gender: 93
+## 6. Fill Gaps in History and Improve Information
+Launch initiatives to address missing historical periods and underrepresented movements within the collection. Focus on acquiring works that provide broader historical and cultural context. Improve the completeness and accuracy of metadata for all works in the collection. This enhances both research value and public accessibility.
 
-Recommendation:
-Launch targeted acquisition efforts and curatorial projects to raise the proportion of artworks by women and gender-diverse artists by at least 25% over the next 5 years.
+## 7. Use Data to Guide Decisions
+Integrate simple, visual data tools and dashboards into acquisition planning and reviews. Use data to track progress on diversity, equity, and representation goals. Conduct regular assessments to support strategic and informed decision-making. A data-informed approach ensures transparency and alignment with long-term objectives.
 
-2. Broaden Global Representation
-Current Status:
-
-Top nationality: American (292 artists)
-
-Other heavily represented: French (51), German (30), British (28)
-
-Underrepresented/represented once: Bangladeshi, Mozambican, Oneida, etc.
-
-Recommendation:
-Allocate dedicated resources to acquire works from Africa, South America, Southeast Asia, and the Middle East, with the goal of increasing non-Western nationalities by at least 30%.
-
-3. Diversify Mediums and Art Forms
-Current Status:
-
-Top mediums:
-
-Oil on canvas (185)
-
-Gelatin silver print (158)
-
-Ink/Crayon/Colored Ink on Paper (132)
-
-Low presence in:
-
-Video (16)
-
-Installation (15)
-
-Illustrated books (9)
-
-Film (4)
-
-Recommendation:
-Boost representation in underrepresented mediums by doubling acquisitions in video, installation, and digital art over the next cycle. Support programs for emerging media.
-
-4. Balance Artist Representation
-Current Status:
-
-661 artists, but heavily skewed towards a few (e.g., Robert Frank has 55 works)
-
-Recommendation:
-Cap the maximum works per artist in new acquisitions, while increasing investment in first-time and emerging artists to improve distribution equity.
-
-5. Optimize Acquisition Scheduling
-Current Status:
-
-Busiest day: Tuesday (455 artworks)
-
-Quietest day: Saturday (6 artworks)
-
-Top month: October (394 artworks)
-
-Lowest month: August (2 artworks)
-
-Recommendation:
-Review internal acquisition workflows. Evenly distribute acquisition activity to prevent resource clustering and align with annual funding cycles.
-
-6. Strengthen Historical Coverage and Metadata Completeness
-Current Status:
-
-Top period: 2011–2024 (497 artworks)
-
-Lowest (known) period: 1971–1990 (170 artworks)
-
-Unknown years: 7 artworks
-
-Unknown nationalities: 22 artists
-
-Recommendation:
-Develop a curatorial initiative to fill historical and biographical gaps, focusing on underrepresented time periods and improving metadata quality across the board.
-
-7. Use Data to Drive Strategy
-Current Insight:
-Clear patterns in demographics, timing, and collection bias are visible via the dashboard.
-
-Recommendation:
-Integrate dashboard analytics into quarterly acquisition reviews, funding decisions, and DEI (Diversity, Equity, and Inclusion) benchmarks to ensure data-informed curation.
-
-8. Foster Global and Regional Partnerships
-Current Observation:
-Artist nationalities are concentrated in Western countries.
-
-Recommendation:
-Establish acquisition collaborations with regional institutions, art fairs, and cultural ministries in underserved areas to expand outreach and diversify representation.
+## 8. Build Partnerships to Expand Reach
+Establish partnerships with regional museums, cultural ministries, and art fairs, especially in underrepresented areas. Use these collaborations to discover new artists and support cross-cultural exchange. Shared initiatives can increase access to artworks and strengthen international networks. These partnerships support a more globally representative collection.
 
 
 
