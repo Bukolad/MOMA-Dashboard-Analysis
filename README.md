@@ -72,15 +72,19 @@ The data cleaning process began in Power Query Editor in Power BI. The major ope
 - Created a new column for Year Extracted . Used a formula to extract the first 4 digits number from the Date column.
 - Replaced Inconsistencies values in Year Extracted Column for accuracy. The M Query Codes from the Power Query Codes have been attached to this repository.
 
-In Addition, i created new measures and new column to provide deeper insights into MOMA ON VIEW Analysis:
-- Total Artworks : To calculate artworks on view in the museum.
-- Total Artist : To calculate Artist with Artwork in the museum.
-- Total Medium
-- Most Featured Artsit : Artist with the Most Artwork
-- Male Artist
-- Female Artist
-- Total Department
-- Total Classification
+Additional Measures and Insights Created for MoMA On View Analysis
+To provide deeper insights into the MoMA On View dataset, several new measures and calculated columns were developed as part of the analysis:
+
+- Total Artworks: Measures the total number of artworks currently on view in the museum.
+- Total Artists: Calculates the number of unique artists with at least one artwork on display.
+- Total Medium: Counts the number of distinct mediums represented across all displayed works.
+- Most Featured Artist: Identifies the artist with the highest number of artworks on view.
+- Male Artists: Calculates the number of male artists represented in the current on-view collection.
+- Female Artists: Calculates the number of female artists represented in the current on-view collection.
+- Total Departments: Counts the number of curatorial departments contributing to the on-view selection.
+- Total Classifications: Identifies the number of unique classifications (e.g., painting, sculpture, drawing) within the displayed collection.
+
+These custom measures enable more detailed visual analysis, support deeper insights into representation and diversity, and help highlight key patterns across the collection.
 
 Additional Transformation includes 
 - Created new column to calculate each Artist First Artwork and Age at First Artwork.
@@ -168,7 +172,7 @@ The insights uncovered highlight areas of excellence, such as MoMA’s strong ho
 
 By translating data into actionable strategies, this dashboard supports MoMA’s mission to remain a leader in modern and contemporary art. With sustained focus on equity, inclusion, and global engagement, the museum can continue to evolve its collection to reflect a richer, more diverse art historical narrative.
 
-This documentation, alongside the dashboard itself, serves as a foundational tool for ongoing evaluation and strategic development—ensuring MoMA’s collection continues to inspire, educate, and represent the full spectrum of creative expression.
+This documentation, alongside the dashboard itself, serves as a foundational tool for ongoing evaluation and strategic development ensuring MoMA’s collection continues to inspire, educate, and represent the full spectrum of creative expression.
 
 # Recommendation
 ## 1. Support More Women and Gender-Diverse Artists
