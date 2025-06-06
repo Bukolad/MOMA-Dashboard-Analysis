@@ -125,6 +125,9 @@ The classification breakdown aligns closely with these observations. Painting is
 
 Overall, this section emphasizes MoMA's traditional strengths in painting, drawing, and photography, while also highlighting its efforts to diversify into other media and departments. The dominance of established mediums like oil on canvas and gelatin silver print indicates a strong foundation in classic techniques, even as newer forms such as performance and video remain areas for potential growth.
 
+![image](https://github.com/user-attachments/assets/502329a1-29c2-48b9-b3b3-cb39018fac5b)
+
+
 # Time Analysis
 The Time Analysis section of the MoMA Dashboard provides a temporal breakdown of artwork acquisitions, offering insight into when works have entered the museum's collection. The data is categorized by weekday, month, and year range, helping identify key periods of curatorial activity.
 
