@@ -65,7 +65,7 @@ The data cleaning process began in Power Query Editor in Power BI. The major ope
 - Replaced Null Values in Nationality and Gender to Unknown
 - Renamed DisplayName column to Artist Name for Clarity.
 - Text Operation such as changing the alphabet case from lower case to Proper Case.
-- Removed Unnecessary Columns. The M Query [Codes](Artist M Query.txt) from the Power Query Editor have been attached to this repository.
+- Removed Unnecessary Columns. The M Query Codes from the Power Query Editor have been attached to this repository.
 
 - ## Artwork Table
 - Changed Data Types for column with incorrect data types.
@@ -90,6 +90,9 @@ Additional Transformation includes
 
 # Data Model 
 The Data Model was automatically created in Power BI. This shows the relationship between the various Table in this project.
+
+![image](https://github.com/user-attachments/assets/afd40d12-e63e-46bb-b84a-363daa6a8117)
+
 
 # Data Analysis & Visualization
 After the completion of data cleaning and preparation, i proceeded to begin my analysis and visualization. To ensure easy readability and understanding, i divided the visualization into 5 pages.
