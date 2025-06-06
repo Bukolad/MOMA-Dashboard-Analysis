@@ -65,7 +65,7 @@ The data cleaning process began in Power Query Editor in Power BI. The major ope
 - Replaced Null Values in Nationality and Gender to Unknown
 - Renamed DisplayName column to Artist Name for Clarity.
 - Text Operation such as changing the alphabet case from lower case to Proper Case.
-- Removed Unnecessary Columns. The M Query [Codes]{Artist M Query.txt} from the Power Query Editor have been attached to this repository.
+- Removed Unnecessary Columns. The M Query [Codes](Artist M Query.txt) from the Power Query Editor have been attached to this repository.
 
 - ## Artwork Table
 - Changed Data Types for column with incorrect data types.
