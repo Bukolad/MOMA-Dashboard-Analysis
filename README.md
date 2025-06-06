@@ -103,6 +103,9 @@ In terms of classification, the collection is heavily dominated by paintings, dr
 The acquisition trends show a sharp increase in the number of artworks acquired in recent years. Between 2011 and 2024, the museum acquired 497 pieces more than any other time period highlighting an active acquisition strategy in the past decade. This contrasts with lower acquisition numbers in earlier decades, particularly before 1950.
 Gender representation among artists reveals male artist have the highest artworks. Out of 661 artists, 421 artworks are attributed to male artists, while only 191 are by female artists. Additionally, 40 artworks come from artists whose gender is unknown, and just one artwork is attributed to a transgender woman. 
 
+![image](https://github.com/user-attachments/assets/b920ddb2-ae17-408f-b66a-8074a253fda9)
+
+
 # Artist
 The Artists section of the MoMA Dashboard provides valuable insights into the gender distribution, nationality, and activity status of artists represented in the museum's collection. 
 Artist nationalities reveals a strong American dominance. Out of the top five nationalities, American artists account shows a substantial 292 entries, The second most common nationality, French, which stands at 51. German, British, Italian, and Japanese artists all appear equally in the dataset, each with 22–30 artists represented. Additionally, 22 artists have an unknown nationality, indicating either limited biographical data or anonymous contributions.
