@@ -143,6 +143,9 @@ When analyzing acquisition by month, October leads substantially with 394 artwor
 Acquisition by Year Range
 To provide better historical context, acquisition years are grouped into six ranges. The 2011–2024 period accounts for the highest number of acquisitions, totaling 497 artworks, which reflects MoMA’s recent expansion and curatorial activity. The 1991–2010 period follows with 270 artworks, while 1951–1970 and before 1950 account for 217 and 184 respectively. The 1971–1990 range has 170 artworks. Only 7 artworks are tagged with unknown acquisition years, suggesting strong data integrity in this dimension.
 
+![image](https://github.com/user-attachments/assets/227640c9-dec9-4c55-ac23-59b5ee551f52)
+
+
 # Map
 The Map section of the MoMA Dashboard visually represents the geographical distribution of artist nationalities featured in the museum's collection. This interactive component allows users to understand the global reach of the MoMA collection by locating the countries associated with each artist’s nationality on a world map.
 
