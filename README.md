@@ -111,6 +111,9 @@ The age/status distribution of the artists offers further context about their pe
 
 The bottom of the dashboard includes a searchable artist table, listing names along with their nationality, gender, and total number of artworks in the collection. For example, American male artist Aaron Siskind has 10 artworks, while several other artists such as Agnes Martin and Abdel Kader El-Janabi are represented by only one.
 
+![image](https://github.com/user-attachments/assets/b6eee6b0-c0a8-4996-a6c8-5a8a90eb0514)
+
+
 # Artwork
 The Artworks section of the MoMA Dashboard gives a detailed overview of how artworks in the collection are distributed across mediums, departments, and classifications. The data reveals that the collection encompasses 481 unique mediums, spread across 6 departments and categorized into 20 classifications. This diversity reflects MoMA’s wide-ranging curatorial scope and its embrace of both traditional and contemporary art forms.
 
