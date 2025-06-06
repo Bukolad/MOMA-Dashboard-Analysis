@@ -1,0 +1,14 @@
+let
+    Source = Excel.Workbook(File.Contents("C:\Users\USER\Downloads\MoMA_OnView.xlsx"), null, true),
+    Artists_Sheet = Source{[Item="Artists",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(Artists_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ConstituentID", Int64.Type}, {"DisplayName", type text}, {"ArtistBio", type text}, {"Nationality", type text}, {"Gender", type text}, {"BeginDate", Int64.Type}, {"EndDate", Int64.Type}}),
+    #"Replaced Value" = Table.ReplaceValue(#"Changed Type",null,"Unspecified",Replacer.ReplaceValue,{"ArtistBio"}),
+    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value",null,"Unknown",Replacer.ReplaceValue,{"Nationality"}),
+    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1",null,"Unknown",Replacer.ReplaceValue,{"Gender"}),
+    #"Added Custom" = Table.AddColumn(#"Replaced Value2", "Status", each if [EndDate] = 0 then "Still Alive" else "Deceased"),
+    #"Renamed Columns" = Table.RenameColumns(#"Added Custom",{{"DisplayName", "Artists Name"}}),
+    #"Capitalized Each Word" = Table.TransformColumns(#"Renamed Columns",{{"Gender", Text.Proper, type text}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Capitalized Each Word",{"Status"})
+in
+    #"Removed Columns"

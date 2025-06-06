@@ -1,0 +1,29 @@
+let
+    Source = Excel.Workbook(File.Contents("C:\Users\USER\Downloads\MoMA_OnView.xlsx"), null, true),
+    Artworks_Sheet = Source{[Item="Artworks",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(Artworks_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ObjectID", Int64.Type}, {"Title", type text}, {"ConstituentID", type any}, {"Date", type any}, {"Medium", type text}, {"Dimensions", type text}, {"Classification", type text}, {"Department", type text}, {"DateAcquired", type date}, {"URL", type text}, {"ImageURL", type text}, {"OnView", type text}}),
+    #"Split Column by Delimiter" = Table.ExpandListColumn(Table.TransformColumns(Table.TransformColumnTypes(#"Changed Type", {{"ConstituentID", type text}}, "en-US"), {{"ConstituentID", Splitter.SplitTextByDelimiter(",", QuoteStyle.Csv), let itemType = (type nullable text) meta [Serialized.Text = true] in type {itemType}}}), "ConstituentID"),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Split Column by Delimiter",{{"ConstituentID", Int64.Type}}),
+    #"Added Custom" = Table.AddColumn(#"Changed Type1", "Custom", each let 
+  rawText = Text.From([Date]), // ensures it's text
+  digitText = Text.Select(rawText, {"0".."9"}), // get only digits
+  result = if Text.Length(digitText) >= 4 then Text.Start(digitText,4) else null 
+  in 
+     result),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom",{{"Custom", Int64.Type}}),
+    #"Renamed Columns" = Table.RenameColumns(#"Changed Type2",{{"Custom", "Year Extracted"}}),
+    #"Reordered Columns" = Table.ReorderColumns(#"Renamed Columns",{"ObjectID", "Title", "ConstituentID", "Date", "Year Extracted", "Medium", "Dimensions", "Classification", "Department", "DateAcquired", "URL", "ImageURL", "OnView"}),
+    #"Replaced Value" = Table.ReplaceValue(#"Reordered Columns",1419,1932,Replacer.ReplaceValue,{"Year Extracted"}),
+    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value",1011,1913,Replacer.ReplaceValue,{"Year Extracted"}),
+    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1",1201,1991,Replacer.ReplaceValue,{"Year Extracted"}),
+    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2",1519,1998,Replacer.ReplaceValue,{"Year Extracted"}),
+    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3",1111,1940,Replacer.ReplaceValue,{"Year Extracted"}),
+    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4",1211,1940,Replacer.ReplaceValue,{"Year Extracted"}),
+    #"Replaced Value6" = Table.ReplaceValue(#"Replaced Value5",1319,1913,Replacer.ReplaceValue,{"Year Extracted"}),
+    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value6",3201,1985,Replacer.ReplaceValue,{"Year Extracted"}),
+    #"Replaced Value8" = Table.ReplaceValue(#"Replaced Value7",8119,1956,Replacer.ReplaceValue,{"Year Extracted"}),
+    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8",4119,1924,Replacer.ReplaceValue,{"Year Extracted"}),
+    #"Replaced Value10" = Table.ReplaceValue(#"Replaced Value9",5301,1949,Replacer.ReplaceValue,{"Year Extracted"})
+in
+    #"Replaced Value10"
