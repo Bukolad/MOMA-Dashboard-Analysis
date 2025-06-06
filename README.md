@@ -149,6 +149,9 @@ The map also showcases artists from less commonly represented regions, underscor
 
 Additionally, some entries are categorized under “Unknown”, which likely indicates either missing nationality data or artists whose origins could not be definitively identified.
 
+![image](https://github.com/user-attachments/assets/1bde663a-a239-4dbd-8ec3-ca29bca7e137)
+
+
 # Conclusion
 The MoMA Dashboard provides a powerful analytical lens into the Museum of Modern Art’s collection, revealing critical patterns in artist demographics, artwork mediums, acquisition timelines, and global representation. Through interactive visualizations and curated data views, the dashboard surfaces both strengths and disparities in the collection’s makeup empowering stakeholders to make informed, data-driven decisions.
 
